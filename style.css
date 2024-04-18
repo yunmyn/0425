@@ -23,7 +23,9 @@ header {
 }
 header .logo {
     max-width: 60px;
-    
+}
+section .header .logo {
+    max-width: 60px;
 }
 
 header ul {
@@ -56,10 +58,13 @@ header ul li a {
 }
 .Content .textBox h3 {
     color: #07852f;
-    font-size: 1.2em;
+    font-size: 1.4em;
     line-height: 2em;
     font-weight: 700;
-    margin: 90px;
+    margin: 200px;
+    background-color: #fff;
+    display: block;
+    width: 500px
 }
 .Content .textBox a {
     display: inline-block;
@@ -96,6 +101,7 @@ header ul li a {
 }
 .thumb li img {
     width: 80%;
+    height: auto;
 }
 
 .circle {
