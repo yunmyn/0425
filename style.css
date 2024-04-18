@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background-color: beige;
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo {
+    max-width: 60px;
+    
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+header ul li {
+    list-style: none;
+}
+header ul li a {
+    color: #07852f;
+    margin-left: 100px;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    font-weight: bold;
+}
+
+.Content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Content .textBox {
+    position: relative;
+    max-width: 600px;
+}
+.Content .textBox h3 {
+    color: #07852f;
+    font-size: 1.2em;
+    line-height: 2em;
+    font-weight: 700;
+    margin: 90px;
+}
+.Content .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #62a759;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.Content .imgbox {
+    width: 700px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 200px;
+}
+.thumb {
+    position: absolute;
+    left: 50%;
+    display: flex;
+    bottom: 40px;
+    transform: translateX(-50%);
+}
+.thumb li {
+    list-style: none;
+    margin: 0 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+.thumb li:hover {
+    transform: translateY(-20px) translateX(7px);
+}
+.thumb li img {
+    width: 80%;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background-color: #d752b1;
+    clip-path: circle(700px at right 800px);
+}
