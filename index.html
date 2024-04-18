@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header >
+            <a href="#" class="logo">
+                <img src="./imgs/logo.png" alt="logo">
+            </a>
+            <ul>
+                <li><a href="#">주민목록</a></li>
+                <li><a href="#">화석목록</a></li>
+                <li><a href="#">물고기목록</a></li>
+                <li><a href="#">곤충목록</a></li>
+                <li><a href="#">채집목록</a></li>
+                <li><a href="#">가구목록</a></li>
+            </ul>
+        </header>
+        <div class="Content logo">
+            <div class="textBox">
+                <P><h3> 이름: 대장 <br> 성별: 남성 <br> 종족: 늑대
+                <br> 말버릇: 그렇잖여 <br> 좋아하는 노래: K.K.로큰롤 <br>
+            취미: 음악 <br> 선호하는 스타일: 쿨 / 심플 <br> 성격: 무뚝뚝 </P> 
+            </div>
+            <div class="imgbox">
+                <img src="./imgs/deajang.png" alt="" class="imgbox">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./imgs/loona.png" alt="" onclick="imgSlider('./imgs/thumb1.png');
+            changeCircleColor('#229cba');" ></li>
+            <li><img src="./imgs/marimo.png" alt="" onclick="imgSlider
+            ('./imgs/thumb2.png');changeCircleColor('#419215');"></li>
+            <li><img src="./imgs/zzuni.png" alt="" onclick="imgSlider('./imgs/thumb3.png');
+            changeCircleColor('#eddf5d');"></li>
+            <li><img src="./imgs/deazang.png" alt="" onclick="imgSlider('./imgs/thumb4.png');
+            changeCircleColor('#d752b1');"></li>
+            <li><img src="./imgs/fumuger.png" alt="" onclick="imgSlider('./imgs/thumb5.png');
+            changeCircleColor('#cacac5');"></li>
+            <li><img src="./imgs/ogoal.png" alt="" onclick="imgSlider('./imgs/thumb6.png');
+            changeCircleColor('#505158');"></li>
+            <li><img src="./imgs/bolt.png" alt="" onclick="imgSlider('./imgs/thumb7.png');
+            changeCircleColor('#223080');"></li>
+        </ul>
+    </section>
+    <script>
+        function imgSlider(anything) {
+            document. querySelector('.thumb').src = anything;
+        }
+        function changeCircleColor(color) {
+            const circle = document. querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+
+</body>
+</html>
