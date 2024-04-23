@@ -11,6 +11,9 @@ section {
     display: flex;
     background-color: beige;
 }
+html , body , div , h2 , h3 , p {
+    word-break: initial;
+}
 header {
     position: absolute;
     top: 0;
@@ -52,36 +55,30 @@ header ul li a {
     align-items: center;
 }
 
-.Content .textBox {
-    position: relative;
+section .textBox {
     max-width: 600px;
-}
-.Content .textBox h3 {
     color: #07852f;
-    font-size: 1.4em;
+    margin: 100px;
+}
+.Content .textBox h2 {
+    font-size: 2em;
     line-height: 2em;
     font-weight: 700;
-    margin: 200px;
-    background-color: #fff;
-    display: block;
-    width: 500px
+    width: 700px
 }
-.Content .textBox a {
-    display: inline-block;
-    margin-top: 20px;
+.Content .textBox p {
+    display: flex
     padding: 8px 20px;
-    background: #62a759;
-    color: #fff;
-    border-radius: 40px;
-    font-weight: 500;
+    color: #118750;
     letter-spacing: 1px;
     text-decoration: none;
+    font-size: medium;
 }
 .Content .imgbox {
     width: 700px;
     display: flex;
     justify-content: flex-end;
-    padding-right: 200px;
+    margin-right: 500px;
 }
 .thumb {
     position: absolute;
