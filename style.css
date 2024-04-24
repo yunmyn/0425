@@ -97,7 +97,7 @@ section .textBox {
     transform: translateY(-20px) translateX(7px);
 }
 .thumb li img {
-    width: 90%;
+    width: 75px;
 }
 
 .circle {
